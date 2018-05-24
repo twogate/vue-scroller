@@ -498,6 +498,9 @@
       isAnimating() {
         return this.scroller.isAnimating()
       },
+      isDecelerating() {
+        return this.scroller.isDecelerating()
+      },
     }
   }
 </script>

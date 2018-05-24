@@ -473,6 +473,10 @@
 			var self = this;
 			return this.__isAnimating ? true : false;
 		},
+		isDecelerating: function() {
+			var self = this;
+			return this.__isDecelerating ? true : false;
+		},
 
 		/**
 		 * Configures the dimensions of the client (outer) and content (inner) elements.
