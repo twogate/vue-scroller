@@ -2,7 +2,7 @@
 	var NOOP = function () {};
 
 	var core = (function Animate (global) {
-		
+
 		var time = Date.now || function() {
 			return +new Date();
 		};
@@ -468,6 +468,11 @@
 			PUBLIC API
 		---------------------------------------------------------------------------
 		*/
+
+		isAnimating: function() {
+			var self = this;
+			return this.__isAnimating ? true : false;
+		},
 
 		/**
 		 * Configures the dimensions of the client (outer) and content (inner) elements.
